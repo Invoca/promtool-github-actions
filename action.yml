@@ -17,6 +17,9 @@ inputs:
   promtool_actions_comment:
     description: 'Whether or not to comment on pull requests.'
     default: true
+  promtool_unwrap_to_spec:
+    description: 'Whether or not to use yq to unwrap to .spec in the YAML'
+    default: false
 runs:
   using: 'docker'
   image: './Dockerfile'
